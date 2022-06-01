@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Basic HTML/Tailwind starter</title>
+    <meta name="description" content="Basic HTML/Tailwind starter" />
+    <meta name="author" content="Daily Dev Tips" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script type="text/javascript" src="sort.js"></script>
+    <script type="text/javascript" src="competences.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div>
+      <!-- ====== Navbar Section Start -->
+      <aside class="w-64 h-full fixed z-1 top-0 left-0" aria-label="Sidebar">
+        <div
+          class="
+            overflow-y-auto
+            py-4
+            px-3
+            bg-gray-50
+            rounded
+            dark:bg-gray-800
+            h-full
+            relative
+          "
+        >
+          <ul
+            class="space-y-2 top-2/4 relative m-0"
+            style="transform: translateY(-50%)"
+          >
+            <li>
+              <a
+                href="#apropos"
+                class="
+                  flex
+                  items-center
+                  p-2
+                  text-xl
+                  font-normal
+                  text-gray-900
+                  rounded-lg
+                  dark:text-white
+                  hover:bg-gray-100
+                  dark:hover:bg-gray-700
+                "
+              >
+                <span class="ml-3">A propos</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#projet"
+                class="
+                  flex
+                  items-center
+                  p-2
+                  text-xl
+                  font-normal
+                  text-gray-900
+                  rounded-lg
+                  dark:text-white
+                  hover:bg-gray-100
+                  dark:hover:bg-gray-700
+                "
+              >
+                <span class="flex-1 ml-3 whitespace-nowrap">Projets</span>
+                <span
+                  class="
+                    numberProject
+                    inline-flex
+                    justify-center
+                    items-center
+                    p-3
+                    ml-3
+                    w-3
+                    h-3
+                    text-sm
+                    font-medium
+                    text-blue-600
+                    bg-blue-200
+                    rounded-full
+                    dark:bg-blue-900
+                    dark:text-blue-200
+                  "
+                >
+                  10
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#experiences"
+                class="
+                  flex
+                  items-center
+                  p-2
+                  text-xl
+                  font-normal
+                  text-gray-900
+                  rounded-lg
+                  dark:text-white
+                  hover:bg-gray-100
+                  dark:hover:bg-gray-700
+                "
+              >
+                <span class="ml-3">Expériences</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#competences"
+                class="
+                  flex
+                  items-center
+                  p-2
+                  text-xl
+                  font-normal
+                  text-gray-900
+                  rounded-lg
+                  dark:text-white
+                  hover:bg-gray-100
+                  dark:hover:bg-gray-700
+                "
+              >
+                <span class="ml-3">Compétences</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#formations"
+                class="
+                  flex
+                  items-center
+                  p-2
+                  text-xl
+                  font-normal
+                  text-gray-900
+                  rounded-lg
+                  dark:text-white
+                  hover:bg-gray-100
+                  dark:hover:bg-gray-700
+                "
+              >
+                <span class="flex-1 ml-3 whitespace-nowrap">Formations</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="
+                  flex
+                  items-center
+                  p-2
+                  text-xl
+                  font-normal
+                  text-gray-900
+                  rounded-lg
+                  dark:text-white
+                  hover:bg-gray-100
+                  dark:hover:bg-gray-700
+                "
+              >
+                <span class="flex-1 ml-3 whitespace-nowrap">Contact</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="flex flex-row content-center justify-evenly items-center"
+          style="transform: translateY(-150%)"
+        >
+          <a
+            href="https://fr.linkedin.com/in/antoine-pochet-79384b150"
+            target="_blank"
+          >
+            <svg
+              id="linkedin"
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-linkedin"
+              width="44"
+              height="44"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#2c3e50"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <rect x="4" y="4" width="16" height="16" rx="2" />
+              <line x1="8" y1="11" x2="8" y2="16" />
+              <line x1="8" y1="8" x2="8" y2="8.01" />
+              <line x1="12" y1="16" x2="12" y2="11" />
+              <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+            </svg>
+          </a>
+          <a href="https://github.com/pocheta" target="_blank">
+            <svg
+              id="github"
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-github"
+              width="44"
+              height="44"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#2c3e50"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+              />
+            </svg>
+          </a>
+        </div>
+      </aside>
+      <!-- ====== Navbar Section End -->
+
+      <!-- ===== Home Section Start -->
+      <div
+        id="apropos"
+        class="
+          bg-white
+          dark:bg-gray-800
+          overflow-hidden
+          relative
+          ml-72
+          mt-6
+          mr-8
+        "
+      >
+        <div class="text-start w-1/2 py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
+          <h2 class="text-7xl font-extrabold text-black dark:text-white">
+            <span class="block"> Antoine Pochet</span>
+            <span class="block text-indigo-500"> Développeur </span>
+          </h2>
+          <p class="text-2xl mt-4 max-w-md text-gray-400">TODO</p>
+          <div class="lg:mt-0 lg:flex-shrink-0">
+            <div class="mt-12 inline-flex rounded-md shadow">
+              <a
+                href="!"
+                class="
+                  button button--winona
+                  p-0
+                  bg-indigo-700
+                  text-white
+                  hover:bg-gray-700
+                  hover:text-white
+                  relative
+                  block
+                  focus:outline-none
+                  border-2 border-solid
+                  rounded-lg
+                  text-sm text-center
+                  font-semibold
+                  uppercase
+                  tracking-widest
+                  align-middle
+                  overflow-hidden
+                "
+                data-text="Me Contacter"
+              >
+                <span class="align-middle block"> Me Contacter </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <canvas
+          id="canvas"
+          class="
+            absolute
+            h-full
+            w-6/12
+            max-w-1/2
+            hidden
+            lg:block
+            right-0
+            top-0
+            mt-8
+          "
+        ></canvas>
+      </div>
+      <!-- ===== Home Section End -->
+
+      <!-- ====== Portfolio Section Start -->
+      <section
+        id="projet"
+        class="
+          pt-20
+          lg:pt-[120px]
+          pb-12
+          lg:pb-[90px]
+          bottom-0
+          left-0
+          ml-80
+          top-0
+          right-0
+        "
+      >
+        <div class="container">
+          <div class="flex flex-wrap -mx-4">
+            <div class="w-full px-4">
+              <div class="text-center mx-auto mb-[60px] max-w-[510px]">
+                <span class="font-semibold text-lg text-primary mb-2 block">
+                  Mon Portfolio
+                </span>
+                <h2
+                  class="
+                    font-bold
+                    text-3xl
+                    sm:text-5xl
+                    md:text-[40px]
+                    text-dark
+                    mb-6
+                  "
+                >
+                  Mes projets recent
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-wrap justify-center -mx-4">
+            <div class="w-full px-4">
+              <ul class="flex flex-wrap justify-center mb-12 space-x-1">
+                <li class="mb-1">
+                  <a
+                    onclick="sortcard('all')"
+                    class="
+                      button button--nina
+                      px-5
+                      py-0
+                      bg-gray-800
+                      hover:bg-gray-700
+                      text-white
+                      relative
+                      block
+                      focus:outline-none
+                      border-2 border-solid
+                      rounded-lg
+                      text-sm text-center
+                      font-semibold
+                      uppercase
+                      overflow-hidden
+                    "
+                    data-text="Tous"
+                  >
+                    <span class="align-middle">T</span>
+                    <span class="align-middle">O</span>
+                    <span class="align-middle">U</span>
+                    <span class="align-middle">S</span>
+                  </a>
+                </li>
+                <li class="mb-1">
+                  <a
+                    onclick="sortcard('java')"
+                    class="
+                      button button--nina
+                      px-5
+                      py-0
+                      bg-gray-800
+                      hover:bg-gray-700
+                      text-white
+                      relative
+                      block
+                      focus:outline-none
+                      border-2 border-solid
+                      rounded-lg
+                      text-sm text-center
+                      font-semibold
+                      uppercase
+                      overflow-hidden
+                    "
+                    data-text="Java"
+                  >
+                    <span class="align-middle">J</span>
+                    <span class="align-middle">A</span>
+                    <span class="align-middle">V</span>
+                    <span class="align-middle">A</span>
+                  </a>
+                </li>
+                <li class="mb-1">
+                  <a
+                    onclick="sortcard('c')"
+                    class="
+                      button button--nina
+                      px-5
+                      py-0
+                      bg-gray-800
+                      hover:bg-gray-700
+                      text-white
+                      relative
+                      block
+                      focus:outline-none
+                      border-2 border-solid
+                      rounded-lg
+                      text-sm text-center
+                      font-semibold
+                      uppercase
+                      overflow-hidden
+                    "
+                    data-text="C/C++"
+                  >
+                    <span class="align-middle">C</span>
+                    <span class="align-middle">/</span>
+                    <span class="align-middle">C</span>
+                    <span class="align-middle">+</span>
+                    <span class="align-middle">+</span>
+                  </a>
+                </li>
+                <li class="mb-1">
+                  <a
+                    onclick="sortcard('html')"
+                    class="
+                      button button--nina
+                      px-5
+                      py-0
+                      bg-gray-800
+                      hover:bg-gray-700
+                      text-white
+                      relative
+                      block
+                      focus:outline-none
+                      border-2 border-solid
+                      rounded-lg
+                      text-sm text-center
+                      font-semibold
+                      uppercase
+                      overflow-hidden
+                    "
+                    data-text="HTML/CSS"
+                  >
+                    <span class="align-middle">H</span>
+                    <span class="align-middle">T</span>
+                    <span class="align-middle">M</span>
+                    <span class="align-middle">L</span>
+                    <span class="align-middle">/</span>
+                    <span class="align-middle">C</span>
+                    <span class="align-middle">S</span>
+                    <span class="align-middle">S</span>
+                  </a>
+                </li>
+                <li class="mb-1">
+                  <a
+                    onclick="sortcard('javascript')"
+                    class="
+                      button button--nina
+                      px-5
+                      py-0
+                      bg-gray-800
+                      hover:bg-gray-700
+                      text-white
+                      relative
+                      block
+                      focus:outline-none
+                      border-2 border-solid
+                      rounded-lg
+                      text-sm text-center
+                      font-semibold
+                      uppercase
+                      overflow-hidden
+                    "
+                    data-text="JAVASCRIPT"
+                  >
+                    <span class="align-middle">J</span>
+                    <span class="align-middle">A</span>
+                    <span class="align-middle">V</span>
+                    <span class="align-middle">A</span>
+                    <span class="align-middle">S</span>
+                    <span class="align-middle">C</span>
+                    <span class="align-middle">R</span>
+                    <span class="align-middle">I</span>
+                    <span class="align-middle">P</span>
+                    <span class="align-middle">T</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex flex-wrap -mx-4">
+            <div class="w-full md:w-1/2 xl:w-1/3 px-4 java card">
+              <div class="relative mb-12">
+                <div class="rounded-lg overflow-hidden">
+                  <img
+                    src="https://cdn.tailgrids.com/1.0/assets/images/portfolio/portfolio-01/image-03.jpg"
+                    alt="portfolio"
+                    class="w-full"
+                  />
+                </div>
+                <div
+                  class="
+                    text-center
+                    bg-white
+                    relative
+                    z-10
+                    py-9
+                    px-3
+                    rounded-lg
+                    shadow-lg
+                    mx-7
+                    -mt-20
+                  "
+                >
+                  <span class="text-sm text-primary font-semibold block mb-2">
+                    Java
+                  </span>
+                  <h3 class="font-bold text-xl text-dark mb-4">TODO</h3>
+                  <a
+                    href="javascript:void(0)"
+                    class="
+                      text-body-color text-sm
+                      font-semibold
+                      py-3
+                      px-7
+                      inline-block
+                      border
+                      rounded-md
+                      button--moema
+                    "
+                  >
+                    En savoir plus
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 xl:w-1/3 px-4 javascript card">
+              <div class="relative mb-12">
+                <div class="rounded-lg overflow-hidden">
+                  <img
+                    src="https://cdn.tailgrids.com/1.0/assets/images/portfolio/portfolio-01/image-03.jpg"
+                    alt="portfolio"
+                    class="w-full"
+                  />
+                </div>
+                <div
+                  class="
+                    text-center
+                    bg-white
+                    relative
+                    z-10
+                    py-9
+                    px-3
+                    rounded-lg
+                    shadow-lg
+                    mx-7
+                    -mt-20
+                  "
+                >
+                  <span class="text-sm text-primary font-semibold block mb-2">
+                    Javascript
+                  </span>
+                  <h3 class="font-bold text-xl text-dark mb-4">TODO</h3>
+                  <a
+                    href="javascript:void(0)"
+                    class="
+                      text-body-color text-sm
+                      font-semibold
+                      py-3
+                      px-7
+                      inline-block
+                      border
+                      rounded-md
+                      button--moema
+                    "
+                  >
+                    En savoir plus
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 xl:w-1/3 px-4 html card">
+              <div class="relative mb-12">
+                <div class="rounded-lg overflow-hidden">
+                  <img
+                    src="https://cdn.tailgrids.com/1.0/assets/images/portfolio/portfolio-01/image-03.jpg"
+                    alt="portfolio"
+                    class="w-full"
+                  />
+                </div>
+                <div
+                  class="
+                    text-center
+                    bg-white
+                    relative
+                    z-10
+                    py-9
+                    px-3
+                    rounded-lg
+                    shadow-lg
+                    mx-7
+                    -mt-20
+                  "
+                >
+                  <span class="text-sm text-primary font-semibold block mb-2">
+                    HTML/CSS
+                  </span>
+                  <h3 class="font-bold text-xl text-dark mb-4">TODO</h3>
+                  <a
+                    href="javascript:void(0)"
+                    class="
+                      text-body-color text-sm
+                      font-semibold
+                      py-3
+                      px-7
+                      inline-block
+                      border
+                      rounded-md
+                      button--moema
+                    "
+                  >
+                    En savoir plus
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 xl:w-1/3 px-4 java card">
+              <div class="relative mb-12">
+                <div class="rounded-lg overflow-hidden">
+                  <img
+                    src="https://cdn.tailgrids.com/1.0/assets/images/portfolio/portfolio-01/image-03.jpg"
+                    alt="portfolio"
+                    class="w-full"
+                  />
+                </div>
+                <div
+                  class="
+                    text-center
+                    bg-white
+                    relative
+                    z-10
+                    py-9
+                    px-3
+                    rounded-lg
+                    shadow-lg
+                    mx-7
+                    -mt-20
+                  "
+                >
+                  <span class="text-sm text-primary font-semibold block mb-2">
+                    Java
+                  </span>
+                  <h3 class="font-bold text-xl text-dark mb-4">TODO</h3>
+                  <a
+                    href="javascript:void(0)"
+                    class="
+                      text-body-color text-sm
+                      font-semibold
+                      py-3
+                      px-7
+                      inline-block
+                      border
+                      rounded-md
+                      button--moema
+                    "
+                  >
+                    En savoir plus
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 xl:w-1/3 px-4 c card">
+              <div class="relative mb-12">
+                <div class="rounded-lg overflow-hidden">
+                  <img
+                    src="https://cdn.tailgrids.com/1.0/assets/images/portfolio/portfolio-01/image-03.jpg"
+                    alt="portfolio"
+                    class="w-full"
+                  />
+                </div>
+                <div
+                  class="
+                    text-center
+                    bg-white
+                    relative
+                    z-10
+                    py-9
+                    px-3
+                    rounded-lg
+                    shadow-lg
+                    mx-7
+                    -mt-20
+                  "
+                >
+                  <span class="text-sm text-primary font-semibold block mb-2">
+                    C/C++
+                  </span>
+                  <h3 class="font-bold text-xl text-dark mb-4">TODO</h3>
+                  <a
+                    href="javascript:void(0)"
+                    class="
+                      text-body-color text-sm
+                      font-semibold
+                      py-3
+                      px-7
+                      inline-block
+                      border
+                      rounded-md
+                      button--moema
+                    "
+                  >
+                    En savoir plus
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 xl:w-1/3 px-4 java card">
+              <div class="relative mb-12">
+                <div class="rounded-lg overflow-hidden">
+                  <img
+                    src="https://cdn.tailgrids.com/1.0/assets/images/portfolio/portfolio-01/image-03.jpg"
+                    alt="portfolio"
+                    class="w-full"
+                  />
+                </div>
+                <div
+                  class="
+                    text-center
+                    bg-white
+                    relative
+                    z-10
+                    py-9
+                    px-3
+                    rounded-lg
+                    shadow-lg
+                    mx-7
+                    -mt-20
+                  "
+                >
+                  <span class="text-sm text-primary font-semibold block mb-2">
+                    Java
+                  </span>
+                  <h3 class="font-bold text-xl text-dark mb-4">TODO</h3>
+                  <a
+                    href="javascript:void(0)"
+                    class="
+                      text-body-color text-sm
+                      font-semibold
+                      py-3
+                      px-7
+                      inline-block
+                      border
+                      rounded-md
+                      button--moema
+                    "
+                  >
+                    En savoir plus
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ====== Portfolio Section End -->
+
+      <!-- ====== Expériences Section Start -->
+      <div id="experiences" class="ml-80">
+        <div class="max-w-6xl mx-auto px-5 py-24">
+          <div class="text-center mb-20">
+            <h1
+              class="
+                title-font
+                mb-4
+                text-3xl
+                font-extrabold
+                leading-10
+                tracking-tight
+                sm:text-5xl
+                sm:leading-none
+              "
+            >
+              Expériences
+            </h1>
+            <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
+              TODO
+            </p>
+            <div class="flex mt-6 justify-center">
+              <div
+                class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"
+              ></div>
+            </div>
+          </div>
+          <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 justify-center">
+            <div class="p-10 md:w-5/12 md:mb-0 mb-6 flex flex-col">
+              <div class="pattern-dots-md">
+                <div
+                  class="
+                    rounded
+                    bg-blue-100
+                    p-4
+                    transform
+                    translate-x-6
+                    -translate-y-6
+                  "
+                >
+                  <div
+                    class="
+                      w-16
+                      h-16
+                      inline-flex
+                      items-center
+                      justify-center
+                      rounded-full
+                      bg-white
+                      text-green-500
+                      mb-5
+                      flex-shrink-0
+                      p-2
+                    "
+                  >
+                    <img src="ibm.png" />
+                  </div>
+                  <div class="flex-grow text-black">
+                    <h2 class="text-xl title-font font-medium mb-3">
+                      Developpeur Cobol
+                    </h2>
+                    <p class="leading-relaxed text-sm text-justify">TODO.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-10 md:w-5/12 md:mb-0 mb-6 flex flex-col">
+              <div class="pattern-dots-md">
+                <div
+                  class="
+                    rounded
+                    bg-blue-100
+                    p-4
+                    transform
+                    translate-x-6
+                    -translate-y-6
+                  "
+                >
+                  <div
+                    class="
+                      w-16
+                      h-16
+                      inline-flex
+                      items-center
+                      justify-center
+                      rounded-full
+                      bg-white
+                      text-green-500
+                      mb-5
+                      flex-shrink-0
+                      p-2
+                    "
+                  >
+                    <img src="ibm.png" />
+                  </div>
+                  <div class="flex-grow text-black">
+                    <h2 class="text-xl title-font font-medium mb-3">
+                      Developpeur Cobol
+                    </h2>
+                    <p class="leading-relaxed text-sm text-justify">TODO.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ====== Expériences Section End -->
+
+      <!-- ====== Compétences Section Start -->
+      <div
+        id="competences"
+        class="
+          bg-white
+          dark:bg-gray-800
+          flex
+          relative
+          z-20
+          items-center
+          overflow-hidden
+          ml-80
+        "
+      >
+        <div class="container mx-auto px-6 flex relative py-16">
+          <div class="sm:w-2/3 lg:w-2/5 flex flex-col relative z-20">
+            <span class="w-16 h-1 bg-indigo-500 mb-12"></span>
+            <h1
+              class="
+                font-bebas-neue
+                text-3xl
+                font-black
+                sm:text-5xl
+                flex flex-col
+                leading-none
+                dark:text-white
+                text-gray-800
+              "
+            >
+              Compétences
+            </h1>
+            <p class="text-sm sm:text-base text-gray-700 dark:text-white">
+              TODO
+            </p>
+          </div>
+          <div class="sm:block sm:w-1/3 lg:w-3/5 relative">
+            <div
+              x-data="skillDisplay"
+              class="
+                p-6
+                space-y-6
+                bg-gray-800
+                rounded-xl
+                md:grid md:grid-cols-2
+                md:gap-4
+                sm:space-y-0
+              "
+            >
+              <div class="grid grid-cols-2 gap-6">
+                <button
+                  onclick="calculPourcentage(80)"
+                  class="
+                    px-4
+                    py-2
+                    text-xl text-white
+                    transition
+                    bg-indigo-500
+                    rounded-md
+                    h-14
+                    w-44
+                    hover:bg-blue-700
+                    focus:outline-none
+                    focus:ring focus:ring-white
+                    focus:bg-blue-700
+                  "
+                >
+                  NodeJS
+                </button>
+                <button
+                  onclick="calculPourcentage(85)"
+                  class="
+                    px-4
+                    py-2
+                    text-xl text-white
+                    transition
+                    bg-indigo-500
+                    rounded-md
+                    h-14
+                    w-44
+                    hover:bg-blue-700
+                    focus:outline-none
+                    focus:ring focus:ring-white
+                    focus:bg-blue-700
+                  "
+                >
+                  Javascript
+                </button>
+                <button
+                  onclick="calculPourcentage(75)"
+                  class="
+                    px-4
+                    py-2
+                    text-xl text-white
+                    transition
+                    bg-indigo-500
+                    rounded-md
+                    h-14
+                    w-44
+                    hover:bg-blue-700
+                    focus:outline-none
+                    focus:ring focus:ring-white
+                    focus:bg-blue-700
+                  "
+                >
+                  IDE
+                </button>
+                <button
+                  onclick="calculPourcentage(95)"
+                  class="
+                    px-4
+                    py-2
+                    text-xl text-white
+                    transition
+                    bg-indigo-500
+                    rounded-md
+                    h-14
+                    w-44
+                    hover:bg-blue-700
+                    focus:outline-none
+                    focus:ring focus:ring-white
+                    focus:bg-blue-700
+                  "
+                >
+                  Cobol
+                </button>
+                <button
+                  onclick="calculPourcentage(90)"
+                  class="
+                    px-4
+                    py-2
+                    text-xl text-white
+                    transition
+                    bg-indigo-500
+                    rounded-md
+                    h-14
+                    w-44
+                    hover:bg-blue-700
+                    focus:outline-none
+                    focus:ring focus:ring-white
+                    focus:bg-blue-700
+                  "
+                >
+                  SQL
+                </button>
+                <button
+                  onclick="calculPourcentage(95)"
+                  class="
+                    px-4
+                    py-2
+                    text-xl text-white
+                    transition
+                    bg-indigo-500
+                    rounded-md
+                    h-14
+                    w-44
+                    hover:bg-blue-700
+                    focus:outline-none
+                    focus:ring focus:ring-white
+                    focus:bg-blue-700
+                  "
+                >
+                  Java
+                </button>
+                <button
+                  onclick="calculPourcentage(70)"
+                  class="
+                    px-4
+                    py-2
+                    text-xl text-white
+                    transition
+                    bg-indigo-500
+                    rounded-md
+                    h-14
+                    w-44
+                    hover:bg-blue-700
+                    focus:outline-none
+                    focus:ring focus:ring-white
+                    focus:bg-blue-700
+                  "
+                >
+                  Android
+                </button>
+                <button
+                  onclick="calculPourcentage(70)"
+                  class="
+                    px-4
+                    py-2
+                    text-xl text-white
+                    transition
+                    bg-indigo-500
+                    rounded-md
+                    h-14
+                    w-44
+                    hover:bg-blue-700
+                    focus:outline-none
+                    focus:ring focus:ring-white
+                    focus:bg-blue-700
+                  "
+                >
+                  C/C++
+                </button>
+                <button
+                  onclick="calculPourcentage(90)"
+                  class="
+                    px-4
+                    py-2
+                    text-xl text-white
+                    transition
+                    bg-indigo-500
+                    rounded-md
+                    h-14
+                    w-44
+                    hover:bg-blue-700
+                    focus:outline-none
+                    focus:ring focus:ring-white
+                    focus:bg-blue-700
+                  "
+                >
+                  HTML/CSS
+                </button>
+                <button
+                  onclick="calculPourcentage(85)"
+                  class="
+                    px-4
+                    py-2
+                    text-xl text-white
+                    transition
+                    bg-indigo-500
+                    rounded-md
+                    h-14
+                    w-44
+                    hover:bg-blue-700
+                    focus:outline-none
+                    focus:ring focus:ring-white
+                    focus:bg-blue-700
+                  "
+                >
+                  Git
+                </button>
+              </div>
+
+              <div class="flex items-center justify-center">
+                <svg class="transform -rotate-90 w-72 h-72">
+                  <circle
+                    cx="145"
+                    cy="145"
+                    r="120"
+                    stroke="currentColor"
+                    stroke-width="30"
+                    fill="transparent"
+                    class="text-gray-700"
+                  />
+
+                  <circle
+                    id="circlePourcentage"
+                    cx="145"
+                    cy="145"
+                    r="120"
+                    stroke="currentColor"
+                    stroke-width="30"
+                    fill="transparent"
+                    stroke-dasharray="755"
+                    class="text-blue-500"
+                  />
+                </svg>
+                <p
+                  id="pourcentageCompetences"
+                  class="hidden absolute text-5xl text-white"
+                >
+                  100%
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ====== Compétences Section End -->
+
+      <!-- ===== Formations Section Start -->
+      <div id="formations" class="ml-80">
+        <div class="max-w-6xl mx-auto px-5 py-24">
+          <div class="text-center mb-20">
+            <h1
+              class="
+                title-font
+                mb-4
+                text-3xl
+                font-extrabold
+                leading-10
+                tracking-tight
+                sm:text-5xl
+                sm:leading-none
+              "
+            >
+              Formations
+            </h1>
+            <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
+              TODO
+            </p>
+            <div class="flex mt-6 justify-center">
+              <div
+                class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"
+              ></div>
+            </div>
+          </div>
+          <div
+            class="
+              sm:flex
+              flex-wrap
+              justify-center
+              items-center
+              text-center
+              gap-8
+            "
+          >
+            <div
+              class="
+                w-full
+                sm:w-1/2
+                md:w-1/2
+                lg:w-1/4
+                px-4
+                py-4
+                bg-white
+                mt-6
+                shadow-lg
+                rounded-lg
+                dark:bg-gray-800
+              "
+            >
+              <div class="flex-shrink-0">
+                <div
+                  class="
+                    flex
+                    items-center
+                    mx-auto
+                    justify-center
+                    h-16
+                    w-16
+                    rounded-md
+                    text-white
+                  "
+                >
+                <img src="univ.png">
+
+                </div>
+              </div>
+              <h3
+                class="
+                  text-2xl
+                  sm:text-xl
+                  text-gray-700
+                  font-semibold
+                  dark:text-white
+                  py-4
+                "
+              >
+                Université de Lille
+              </h3>
+              <p class="text-md text-gray-500 dark:text-gray-300 py-4">
+                Master Génie Logiciel
+              </p>
+            </div>
+            <div
+              class="
+                w-full
+                sm:w-1/2
+                md:w-1/2
+                lg:w-1/4
+                px-4
+                py-4
+                mt-6
+                sm:mt-16
+                md:mt-20
+                lg:mt-24
+                bg-white
+                shadow-lg
+                rounded-lg
+                dark:bg-gray-800
+              "
+            >
+              <div class="flex-shrink-0">
+                <div
+                  class="
+                    flex
+                    items-center
+                    mx-auto
+                    justify-center
+                    h-16
+                    w-16
+                    rounded-md
+                    text-white
+                  "
+                >
+                <img src="cnam.png">
+                </div>
+              </div>
+              <h3
+                class="
+                  text-2xl
+                  sm:text-xl
+                  text-gray-700
+                  font-semibold
+                  dark:text-white
+                  py-4
+                "
+              >
+                CNAM
+              </h3>
+              <p class="text-md text-gray-500 dark:text-gray-300 py-4">
+                Licence Informatique
+              </p>
+            </div>
+            <div
+              class="
+                w-full
+                sm:w-1/2
+                md:w-1/2
+                lg:w-1/4
+                mt-6
+                px-4
+                py-4
+                bg-white
+                shadow-lg
+                rounded-lg
+                dark:bg-gray-800
+              "
+            >
+              <div class="flex-shrink-0">
+                <div
+                  class="
+                    flex
+                    items-center
+                    mx-auto
+                    justify-center
+                    h-16
+                    w-16
+                    rounded-md
+                    text-white
+                  "
+                >
+                  <img src="iut.png">
+                </div>
+              </div>
+              <h3
+                class="
+                  text-2xl
+                  sm:text-xl
+                  text-gray-700
+                  font-semibold
+                  dark:text-white
+                  py-4
+                "
+              >
+                IUT A de Lille
+              </h3>
+              <p class="text-md text-gray-500 dark:text-gray-300 py-4">
+                DUT Informatique
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ====== Formations Section End -->
+
+      <div class="bg-white dark:bg-gray-900">
+        <div class="flex justify-center h-screen">
+            <div class="hidden bg-cover lg:block lg:w-2/3" style="background-image: url(map.png)">
+                <div class="flex items-center h-full px-20 bg-gray-900 bg-opacity-40">
+                    <div>
+                        <h2 class="text-4xl font-bold text-white">Brand</h2>
+                        
+                        <p class="max-w-xl mt-3 text-gray-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In autem ipsa, nulla laboriosam dolores, repellendus perferendis libero suscipit nam temporibus molestiae</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex items-center w-full max-w-md px-6 mx-auto lg:w-2/6">
+                <div class="flex-1">
+                    <div class="text-center">
+                        <h2 class="text-4xl font-bold text-center text-gray-700 dark:text-white">Brand</h2>
+                        
+                        <p class="mt-3 text-gray-500 dark:text-gray-300">Sign in to access your account</p>
+                    </div>
+
+                    <div class="mt-8">
+                        <form>
+                            <div>
+                                <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Email Address</label>
+                                <input type="email" name="email" id="email" placeholder="example@example.com" class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                            </div>
+
+                            <div class="mt-6">
+                                <div class="flex justify-between mb-2">
+                                    <label for="password" class="text-sm text-gray-600 dark:text-gray-200">Password</label>
+                                    <a href="#" class="text-sm text-gray-400 focus:text-blue-500 hover:text-blue-500 hover:underline">Forgot password?</a>
+                                </div>
+
+                                <input type="password" name="password" id="password" placeholder="Your Password" class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                            </div>
+
+                            <div class="mt-6">
+                                <button
+                                    class="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:bg-blue-400 focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+                                    Sign in
+                                </button>
+                            </div>
+
+                        </form>
+
+                        <p class="mt-6 text-sm text-center text-gray-400">Don&#x27;t have an account yet? <a href="#" class="text-blue-500 focus:outline-none focus:underline hover:underline">Sign up</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  </body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.js"></script>
+
+<script>
+  var sizeCanvas = document.getElementById("canvas");
+
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(50, 500 / 400, 0.1, 1000);
+
+  const renderer = new THREE.WebGLRenderer({ canvas: canvas });
+  renderer.setSize(500, 400);
+
+  var geometry = new THREE.SphereGeometry(
+    3,
+    50,
+    50,
+    0,
+    Math.PI * 2,
+    0,
+    Math.PI * 2
+  );
+  var material1 = new THREE.MeshBasicMaterial();
+  var material2 = new THREE.MeshBasicMaterial();
+  var sphere = [
+    new THREE.Mesh(geometry, material1),
+    new THREE.Mesh(geometry, material1),
+    new THREE.Mesh(geometry, material2),
+  ];
+
+  sphere[0].position.set(1, 1, 1);
+  sphere[1].position.set(-1, -1, -1);
+
+  scene.add(sphere[0]);
+  scene.add(sphere[1]);
+  scene.add(sphere[2]);
+
+  camera.position.z = 10;
+
+  var hex =
+    "0x" +
+    "000000".replace(/0/g, function () {
+      return (~~(Math.random() * 16)).toString(16);
+    });
+  sphere[0].material.color.setHex(hex);
+
+  hex =
+    "0x" +
+    "000000".replace(/0/g, function () {
+      return (~~(Math.random() * 16)).toString(16);
+    });
+  sphere[2].material.color.setHex(hex);
+
+  var render = function () {
+    requestAnimationFrame(render);
+    renderer.render(scene, camera);
+  };
+
+  render();
+</script>
